@@ -1,0 +1,29 @@
+nav {
+  width: 90%;
+  margin: auto;
+  padding: 12px 0 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+nav a {
+  width: 135px;
+  height: 100px;
+}
+@media (max-with: 768px) {
+  nav a {
+    padding: 0 5px;
+  }
+}
+.nav_join {
+  font-size: 16px;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.6);
+  margin-right: 12px;
+}
+.nav_join:hover {
+  background-color: rgb(0, 0, 0, 0.08);
+}
