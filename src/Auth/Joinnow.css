@@ -1,0 +1,12 @@
+button {
+  border: none;
+  padding: 5px 4px;
+  background-color: transparent;
+  outline: none !important;
+}
+/* button:active {
+  border: none;
+  padding: 5px 4px;
+  outline: 1px dashed aqua;
+  background-color: transparent;
+} */

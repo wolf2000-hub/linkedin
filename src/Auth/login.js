@@ -1,6 +1,8 @@
 import React from "react";
-import "./Auth.css"
-// import styled from "style-components";
+import "./login.css";
+import Joinnow from "./Joinnow";
+import Signin from "./Signin";
+import Content from "./Content";
 const Login = (props) => {
     return (
         <main >
@@ -8,10 +10,18 @@ const Login = (props) => {
                 <a href="/">
                     <img className="w-100 h-100"  src="/images/images-removebg-preview.png" alt="" />
                 </a>
-                <div className="nav_join">
-               join now
+                <div className="btns-right">
+                    <div className="nav_join">
+                    <Joinnow />
+                    </div>
+                    <div className="nav_Signin">
+                    <Signin />
+                    </div>
                 </div>
-                </nav>
+            </nav>
+            <section>
+            <Content />
+            </section>
         </main>
     )
 };

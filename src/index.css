@@ -34,3 +34,6 @@ span {
   background-color: transparent;
   vertical-align: baseline;
 }
+body {
+  font-family: Arial, sans-serif;
+}
