@@ -1,13 +1,13 @@
 import React from "react";
-import "./joinnow.css"
+import "./join.css";
 // import styled from "style-components";
 const Joinnow = () => {
     return (
         <main>
             <div>
-                <button>
+                <button className="join_btn">
                 Joinnow
-                </button>
+                </button> 
             </div>
         </main>
     )
