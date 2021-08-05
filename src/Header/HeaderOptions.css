@@ -1,0 +1,27 @@
+.headerOptions {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+  color: grey;
+  flex-direction: column;
+  margin-bottom: 2px;
+}
+
+.headerOptions__title {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.headerOptions:hover {
+  color: black;
+  transform: scale(1.02);
+}
+.headerOptions__icon {
+  object-fit: contain;
+  height: 25px !important;
+  width: 25px !important;
+}
+/* .headerOptions__title:hover{
+  border-bottom: 1px dotted blue;
+} */

@@ -3,20 +3,17 @@ import Login from './Auth/login';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Home/Home';
+import Header from './Header/Header';
 
 function App() {
   return (
     <div className="App">
-     <Router>
-        <Switch>
-          <Route exact path='/'>
-             <Login />
-          </Route>
-          <Route exact path='/Home'>
-             <Home />
-          </Route>
-        </Switch>
-     </Router>
+     
+      <Header />
+      {/* Sidebar (Right sidebar) */}
+      {/* Feed (Content)*/}
+      {/* Widgets(Left sidebar) */}
+
     </div>
   );
 }

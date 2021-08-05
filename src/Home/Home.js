@@ -7,7 +7,7 @@ const Home = () => {
         <main>
             <section className="Home_style">
             <Header />
-            <h1>hello Iam Home</h1>    
+            <h1>home</h1>    
             </section>
             
         </main>

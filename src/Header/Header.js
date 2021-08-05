@@ -1,13 +1,28 @@
 import React from "react";
+import SearchIcon from '@material-ui/icons/Search';
 import "./Header.css"
+import HeaderOptions from "./HeaderOptions";
+import { BusinessCenter, Chat, Home, Notifications, SupervisorAccount } from "@material-ui/icons";
 
 const Header = () => {
     return (
-        <main>
-            <div className="Header_nav w-100">
-                <a href="/home">
-                    <img className="img-fluid Header_image" src="./images/linkdinpng.png" alt="" />
-                </a>
+        <main className="header">
+            <div className="Header__left">
+                <img src="./images/linkedin.png" alt="header_img" />
+                <div className="header__search">
+                    <SearchIcon />
+                    <input type="text" />
+                </div>
+            </div>
+
+            <div className="Header__Right">
+                <HeaderOptions Icon={Home} title='Home' />
+                <HeaderOptions Icon={SupervisorAccount} title='my Network' />
+                <HeaderOptions Icon={BusinessCenter} title='Jobs ' />
+                <HeaderOptions Icon={ Chat } title='Message' />
+                <HeaderOptions Icon={Notifications} title='Notification ' />
+                <HeaderOptions avatar="https://w7.pngwing.com/pngs/695/655/png-transparent-head-the-dummy-avatar-man-tie-jacket-user-thumbnail.png" title='Me' />
+                          
             </div>
         </main>
     )
