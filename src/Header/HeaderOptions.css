@@ -3,10 +3,21 @@
   align-items: center;
   cursor: pointer;
   margin-right: 20px;
-  color: grey;
+  color: rgba(0, 0, 0, 0.6);
   flex-direction: column;
   margin-bottom: 2px;
 }
+/* 
+.headerOptions:after {
+  border-bottom: 2px solid blue;
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+} */
 
 .headerOptions__title {
   font-size: 12px;
