@@ -9,8 +9,17 @@ import {
   Notifications,
   SupervisorAccount,
 } from "@material-ui/icons";
+import { useDispatch } from "react-redux";
+import { logout } from "../features/userSlice";
+import { auth } from "../firebase";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const LogoutForm = async () => {
+    await auth.signOut().then(() => {
+      dispatch(logout());
+    });
+  };
   return (
     <main className="header">
       <div className="Header__left">
@@ -27,10 +36,7 @@ const Header = () => {
         <HeaderOptions Icon={BusinessCenter} title="Jobs " />
         <HeaderOptions Icon={Chat} title="Message" />
         <HeaderOptions Icon={Notifications} title="Notification " />
-        <HeaderOptions
-          avatar="https://w7.pngwing.com/pngs/695/655/png-transparent-head-the-dummy-avatar-man-tie-jacket-user-thumbnail.png"
-          title="Me"
-        />
+        <HeaderOptions onClick={LogoutForm} avatar={true} title="Me" />
       </div>
     </main>
   );

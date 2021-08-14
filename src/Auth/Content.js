@@ -15,7 +15,7 @@ const Content = () => {
     e.preventDefault();
     try {
       const userAuth = await auth.signInWithEmailAndPassword(email, password);
-
+      /* تمامی اطلاعاتی مشخص شده ای رو که ما تو فیلد هامون پر میکنیم رو به فایر بیس ارجا میده */
       dispatch(
         login({
           email: userAuth.user.email,
@@ -33,7 +33,7 @@ const Content = () => {
     if (!name) {
       return alert("Please enter a full name!");
     }
-
+    /* When we are Create a User Account we use firebase Auth ( createUserWithEmailAndPassword ) */
     try {
       const userAuth = await auth.createUserWithEmailAndPassword(
         email,
@@ -44,7 +44,7 @@ const Content = () => {
         displayName: name,
         photoUrl: profilePic,
       });
-
+      /*  Firebase FieldValue  */
       dispatch(
         login({
           email: userAuth.user.email,
