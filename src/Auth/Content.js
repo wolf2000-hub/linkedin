@@ -97,7 +97,7 @@ const Content = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <button type="submit" onClick={loginHandler}>
+            <button className="shadow-sm" type="submit" onClick={loginHandler}>
               Sign In
             </button>
           </form>

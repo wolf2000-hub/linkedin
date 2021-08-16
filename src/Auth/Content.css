@@ -12,6 +12,11 @@
   align-items: center;
   margin: auto;
 }
+@media (max-width: 480px) {
+  .login > form {
+    margin-left: 70px !important;
+  }
+}
 @media (max-width: 700px) {
   h1 {
     text-align: center;
@@ -74,21 +79,18 @@
   .Content_Login {
     position: absolute;
     bottom: 0;
-    top: 240px;
     display: flex;
     align-items: center;
     margin: 20px;
     width: 110% !important;
     max-width: 98% !important;
     justify-content: start !important;
-    top: 740px !important;
   }
 }
 @media (max-width: 700px) and (min-width: 875px) {
   .Content_Login {
     position: absolute;
     bottom: 0;
-    top: 240px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -108,39 +110,46 @@
     /* justify-content: center !important; */
     margin: 20px;
     /* width: 100%; */
-    top: 300px !important;
   }
   .Content_Login_btn {
     width: 70% !important;
   }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 900px) and (min-width: 1200px) {
+  .Content_Login {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center !important;
+    /* justify-content: center !important; */
+    margin: 20px;
+    top: 300px !important;
+    /* width: 100%; */
+  }
+}
+@media (max-width: 899px) {
   .Content_section {
     margin: auto;
     min-height: 0;
   }
-  .login > form {
-    margin-left: 110px !important;
-  }
+
   h1 {
     text-align: center;
     font-size: 30px;
     width: 100% !important;
     line-height: 2;
   }
-
   .Content_img {
     height: 600px !important;
     width: initial;
     position: initial;
-    top: 90px;
+    top: 110px;
     right: -140px;
   }
   .Content_Login {
     position: absolute;
     bottom: 0;
-    top: 240px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -148,7 +157,7 @@
     width: 110% !important;
     max-width: 98% !important;
     justify-content: center !important;
-    top: 740px !important;
+    top: 680px !important;
   }
 }
 @media (min-width: 1440px) {
@@ -156,7 +165,15 @@
     margin-top: 67px !important;
   }
   .Content_Login {
-    top: 300 !important;
+    position: absolute;
+    /* bottom: 0; */
+    top: 235px !important;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 20px;
+    width: 90%;
+    max-width: 90%;
   }
 }
 h1 {
@@ -181,7 +198,6 @@ h1 {
 .Content_Login {
   position: absolute;
   /* bottom: 0; */
-  top: 240px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -210,24 +226,36 @@ h1 {
 
 .login > form > input {
   height: 40px;
-  font-size: 20px;
+  font-size: 17px;
 
-  padding-left: 10px;
+  padding-left: 18px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 17px;
+  border: 2px solid #2977c9;
 }
-
+.login > form > input::placeholder {
+  color: #2977c9 !important;
+}
+.login > form > input:focus {
+  outline: none !important;
+}
 .login > form > button {
   height: 50px;
   width: 350px;
   font-size: large;
   color: #fff;
-  background-color: #0074b1;
-  border-radius: 5px;
+  background-color: #2977c9;
+  border-radius: 17px;
+}
+.login > form > button:focus {
+  outline: none !important;
 }
 
+.login > form > button:active {
+  background-color: #65a9f3e8;
+}
 .login__register {
-  color: #0177b7;
+  color: #2285f0fd;
   cursor: pointer;
 }
 
